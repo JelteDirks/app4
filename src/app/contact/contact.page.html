@@ -9,4 +9,18 @@
 
 <ion-content>
 
+    <ion-card *ngFor="let cp of contactpersonen" [routerLink]="['/contact', cp.id]">
+        <ion-card-header>
+            <ion-card-title>
+                {{cp.name}}
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>E-mail: {{cp.email}}</ion-item>
+                <ion-item>Telefoon: {{cp.phone}}</ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
 </ion-content>

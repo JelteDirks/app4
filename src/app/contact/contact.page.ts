@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ContactpersonenService, Contactpersoon} from '../contactpersonen.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.page.html',
-  styleUrls: ['./contact.page.scss'],
+    selector: 'app-contact',
+    templateUrl: './contact.page.html',
+    styleUrls: ['./contact.page.scss'],
 })
 export class ContactPage implements OnInit {
 
-  constructor() { }
+    contactpersonen: Contactpersoon[] = [];
 
-  ngOnInit() {
-  }
+    constructor(private contactpersonenService: ContactpersonenService) {
+    }
+
+    ngOnInit() {
+        this.contactpersonen = this.contactpersonenService.contactpersonen;
+    }
 
 }
