@@ -6,10 +6,12 @@
     </ion-header>
     <ion-content>
         <ion-list>
-            <ion-item [routerLink]="['/contact']">
-                <ion-icon name="contact"></ion-icon>
-                Contact
-            </ion-item>
+            <ion-menu-toggle menu="default">
+                <ion-item [routerLink]="['/contact']">
+                    <ion-icon name="contact"></ion-icon>
+                    Contact
+                </ion-item>
+            </ion-menu-toggle>
         </ion-list>
     </ion-content>
 </ion-menu>
