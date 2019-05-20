@@ -11,21 +11,24 @@ export class ContactpersonenService {
             name: 'Ron Bakkers',
             phone: '068395765629',
             email: 'ron@bsbverzekeringen.nl',
-            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Ron-1-1.jpg'
+            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Ron-1-1.jpg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda at, commodi dolorum, eligendi et exercitationem in labore laboriosam laudantium libero nisi praesentium quia ratione saepe soluta tenetur unde voluptas!'
         },
         {
             id: '2',
             name: 'Erik Bischops',
             phone: '0692835729',
             email: 'erik@bsbverzekeringen.nl',
-            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Eric-1-1.jpg'
+            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Eric-1-1.jpg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto delectus earum eius est neque pariatur quas soluta voluptatum? Ab et eveniet illo incidunt laudantium magni odio similique suscipit vel!'
         },
         {
             id: '3',
             name: 'Mike Aretz',
             phone: '06284966204',
             email: 'mike@bsbverzekeringen.nl',
-            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Mike1-1.jpg'
+            imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Mike1-1.jpg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur deleniti deserunt dolores ducimus expedita harum labore magni, nam neque, nihil nisi officia quam quia repellendus sed ullam unde voluptatem?'
         }
     ];
 
@@ -52,4 +55,5 @@ export interface Contactpersoon {
     phone: string;
     email: string;
     imageURL: string;
+    description: string;
 }
