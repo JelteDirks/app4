@@ -18,7 +18,7 @@ export class ContactpersonenService {
         },
         {
             id: '2',
-            name: 'Erik Bischops',
+            name: 'Erik Bisschops',
             phone: '0692835729',
             email: 'erik@bsbverzekeringen.nl',
             imageURL: 'https://www.bsbverzekeringen.nl/wp-content/uploads/2018/10/Eric-1-1.jpg',
