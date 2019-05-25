@@ -12,7 +12,12 @@
     <ion-card *ngFor="let cp of contactpersonen" [routerLink]="['/contact', cp.id]">
         <ion-card-header>
             <ion-card-title>
-                {{cp.name}}
+                <ion-item lines="none">
+                    <ion-avatar slot="start">
+                        <img [src]="cp.imageURL" alt=""/>
+                    </ion-avatar>
+                    <ion-label>{{cp.name}}</ion-label>
+                </ion-item>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
