@@ -9,8 +9,8 @@
 
 <ion-content>
 
-    <ion-card *ngFor="let cp of contactpersonen" [routerLink]="['/contact', cp.id]">
-        <ion-card-header>
+    <ion-card *ngFor="let cp of contactpersonen">
+        <ion-card-header [routerLink]="['/contact', cp.id]">
             <ion-card-title>
                 <ion-item lines="none">
                     <ion-avatar slot="start">
@@ -22,11 +22,13 @@
         </ion-card-header>
         <ion-card-content>
             <ion-list>
-                <ion-item>
-                    <ion-label>E-mail: {{cp.email}}</ion-label>
+                <ion-item href="mailto:{{cp.email}}">
+                    <ion-icon name="mail" slot="start"></ion-icon>
+                    <ion-label>{{cp.email}}</ion-label>
                 </ion-item>
-                <ion-item>
-                    <ion-label>Telefoon: {{cp.phone}}</ion-label>
+                <ion-item href="tel:{{cp.phone}}">
+                    <ion-icon name="call" slot="start"></ion-icon>
+                    <ion-label>{{cp.phone}}</ion-label>
                 </ion-item>
             </ion-list>
         </ion-card-content>
